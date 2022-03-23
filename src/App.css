@@ -4,13 +4,13 @@
 }
 
 @font-face {
-  font-family: Get Schwifty;
-  src: url('./images/get_schwifty.ttf');
+  font-family: Branda yolq;
+  src: url('./images/Branda-yolq.ttf');
 }
 
 .App {
   background-image: url("./images/wallpaper.jpg");
-  font-family: Get Schwifty;
+  font-family: Branda yolq;
   padding: 30px 120px;
 }
 
@@ -24,7 +24,6 @@ h3 {
 }
 
 .search-box {
-  background-image: url("./images/rickandmorty.png");
   background-position-x: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -37,7 +36,7 @@ h3 {
 }
 
 .search-box img {
-  height: 320px;
+  height: 200px;
 }
 
 .center {
@@ -48,16 +47,15 @@ h3 {
 .search-box input {
   background: hsl(272, 48%, 25%);
   border: none;
-  border-radius: 10px;
-  height: 40px;
-  width: 60%;
+  border-radius: 20px;
+  height: 60px;
+  width: 70%;
 }
 
 .button {
   background: #351e1e;
   border: none;
-  border-radius: 7px;
-  font-family: Get Schwifty;
+  border-radius:Branda yolq;
   height: 40px;
   width: 100px;  
 }
@@ -105,7 +103,7 @@ h3 {
   background-color: #753838;
   border: none;
   border-radius: 50%;
-  font-family: Get Schwifty;
+  font-family: Branda yolq;
   height: 70px;
   width: 70px
 }
