@@ -1,38 +1,184 @@
+* {
+  box-sizing: border-box;
+  color: #f0f8ff;
+}
+
+@font-face {
+  font-family: Get Schwifty;
+  src: url('./images/get_schwifty.ttf');
+}
+
 .App {
+  background-image: url("./images/wallpaper.jpg");
+  font-family: Get Schwifty;
+  padding: 30px 120px;
+}
+
+h1 {
+  font-size: 90px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3 {
+  font-size: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-box {
+  background-image: url("./images/rickandmorty.png");
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: row;
+  height: 350px;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-box img {
+  height: 320px;
+}
+
+.center {
+  padding-top: 150px;
+  width: 75%;
+}
+
+.search-box input {
+  background: hsl(272, 48%, 25%);
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  width: 60%;
+}
+
+.button {
+  background: #351e1e;
+  border: none;
+  border-radius: 7px;
+  font-family: Get Schwifty;
+  height: 40px;
+  width: 100px;  
+}
+
+.button:hover {
+  cursor: pointer;
+  font-size: 16px;
+  height: 50px;
+  transition: 0.2s;
+  width: 12%;    
+}
+
+.location-container {
+  margin-top: 70px;
+}
+
+.location-title {
+  font-size: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.location-info {
+  display: flex;
+  flex-direction: row;
+  font-size: 22px;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.resident-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px auto;
+  width: 400px;
+}
+
+.page-button {
+  background-color: #753838;
+  border: none;
+  border-radius: 50%;
+  font-family: Get Schwifty;
+  height: 70px;
+  width: 70px
+}
+
+.page-button:hover {
+  background-color: #804a4a;
+  cursor: pointer;
+  font-size: 17px;
+  height: 75px;
+  transition: 0.2s;
+  width: 75px;
+}
+
+.showing-page {
+  text-align: center;
+}
+
+.column {
+  width: 100%;
+  padding: 15px;
+}
+
+.card {
+  background-color: rgb(37, 30, 30);
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  color: aliceblue;
+  display: flex;
+  height: 170px;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.card img {   
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+  /* height: 170px; */
+}
+
+.resident-info {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.card li {
+  list-style: none;
+}
+
+.card-name {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.status-container {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+.status {
+  border-radius: 50%;
+  height: 18px;
+  margin-right: 7px;
+  width: 18px;   
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 1224px) {
+  .column {
+      width: 50%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .card {
+      width: 100%;
   }
 }
